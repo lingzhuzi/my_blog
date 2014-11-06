@@ -7,6 +7,26 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="header">
+    <div class="nav">
+      <a class="logo" href="/"></a>
+
+      <a class="left" href="/">首页</a></li>
+      <!-- <a class="left" href="/tour">功能</a></li>  -->
+      <!-- <a class="left" href="/plan">付费</a></li>  -->
+      <!-- <a class="left" href="/mobile">移动版</a></li>  -->
+      <a class="left" href="/blogs">博客</a></li>
+      <!-- <a class="left" href="/club">我的</a></li> -->
+
+      <span class="right divider-vertical hidden-xs"></span>
+
+      <a class="right" href="/users/signin">登录</a></li>
+      <a class="right" href="/users/signup">注册</a></li>
+
+    </div>
+  </div>
+
+
 
   <% if current_user.blank? %>
     <a href="/users/sign_up">注册</a>
